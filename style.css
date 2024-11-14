@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: -webkit-linear-gradient(left,#000000,#000000, #000000, #000000);
+}
+
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space out items evenly */
+    padding: 10px 15px; /* Adjust padding */
+    background-color: #202020;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background-color: rgba(44, 42, 42, 0.3);
+    border-bottom: 3px solid #00ff2a; /* Yellow border */
+}
+
+.navbar ul {
+    display: flex; /* Use flexbox for the list */
+    list-style-type: none; /* Remove bullets */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 0 15px; /* Space between items */
+}
+
+.navbar ul li a {
+    color: #00ff00; /* Green text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size for links */
+    padding: 10px 15px; /* Padding for links */
+    transition: color 0.3s ease; /* Transition for hover effect */
+    width: auto;
+}
+
+nav ul li:hover {
+    background-color: transparent; /* Atau hapus hover sama sekali jika tidak diperlukan */
+}
+
+nav ul li .btn1{
+    display: inline-block;
+    color: #03c500;
+    padding: 10px 15px;
+    margin: 10px 0px;
+    border-radius: 15px;
+    transition: background 0.1s
+}
+
+a{
+    text-decoration: none;
+    color: #03c500;
+}
+
+p{
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 100px;
+}
+
+.col-2 img{
+    max-width: 93%;
+    padding: 14px 0;
+}
+
+.col-2 h1{
+    padding-top: 100px;
+    line-height: 50px;
+    margin: 0px;
+    color: #ffffff;
+}
+
+.btn {
+    position: relative; /* Pastikan tombol berada di atas elemen lain */
+    z-index: 2; /* Memastikan tombol berada di atas elemen lain */
+    display: inline-block;
+    background: #03c500;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0px;
+    border-radius: 15px;
+    transition: background 0.1s;
+    backdrop-filter: blur(5px);
+    background-color: #03c500;
+}
+
+.btn:hover {
+    background: #03c500;
+}
+
+.header .row{
+    margin-top: 20px;
+}
+
+.categories{
+    margin: 70px 0;
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.col-3 img{
+    width: 100%;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-4{
+    flex-basis: 20%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 5px;
+    transition: transform 0.5s;
+    box-sizing: border-box;
+}
+
+.col-4 img{
+    width: 100%; /* Mengisi lebar kolom */
+    height: 250px; /* Tinggi tetap untuk semua gambar */
+    object-fit: cover; /* Memotong gambar agar sesuai dengan kotak */
+    border-radius: 15px; /* Membuat sudut gambar melengkung */
+}
+
+.col-4 h4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Ubah menjadi 1 jika dua baris masih terlalu panjang */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%; /* Pastikan kolom cukup lebar */
+    white-space: normal; /* Atur kembali menjadi normal */
+    font-size: 14px; /* Sesuaikan ukuran font jika perlu */
+}
+
+
+.title{
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 auto 80px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+h4{
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.col-4 p{
+    font-size: 14px;
+}
+
+.col-4:hover{
+    background-color: #4a4a4a;
+}
+
+footer {
+    background-color: rgb(26, 26, 26);
+    color: rgb(58, 58, 58);
+    padding: 20px;
+    text-align: center;
+}
+  
+footer p {
+    margin: 0;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+}
+
+.row-2{
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.row-2 h2{
+    text-align: center;
+    color: #ffffff;
+    padding-top: 100px;
+}
+
+/* Style untuk dropdown */
+.dropbtn {
+    background-color: #000000; /* Button background color */
+    color: rgb(5, 5, 5); /* Text color */
+    padding: 10px 20px; /* Increase padding for better size */
+    font-size: 16px; /* Font size */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer on hover */
+    border-radius: 5px; /* Rounded corners */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.dropbtn:hover {
+    background-color:black; /* Darker color on hover */
+}
+
+.dropdown-content {
+    display: none; /* Hide by default */
+    position: absolute; /* Position it below the button */
+    background-color: black; /* Background color for dropdown */
+    min-width: 160px; /* Minimum width */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1; /* Ensure it's on top */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* .dropdown-content a:hover {
+    background-color: #d4d4d4;
+    color: #000;
+} */
+
+/* Menambahkan garis pembatas pada elemen sebelumnya, jika diperlukan */
+.dropdown-content a:not(:last-child) {
+    border-bottom: 1px solid #686868;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .header .row {
+        margin-top: 80px;
+    }
+
+    .btn {
+        margin: 20px 0px;
+    }
+}
+/* Default Light Mode */
+body {
+    background: #a7a7a7;
+    color: #000000;
+}
+body .p {
+    color: #000000;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: #121212;
+    color: #ffffff;
+}
+body.dark-mode .modal-content {
+    background: #000000;
+}
+
+/* Dark Mode for Dropdown */
+/* body.dark-mode .dropdown-content {
+    background-color: #ffffff;
+} */
+
+/* Modal Background */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    background-color: rgba(66, 66, 66, 0.7); 
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #ffffff;
+    margin: 10% auto; 
+    padding: 20px 30px;
+    border: none;
+    width: 90%; 
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Close Button */
+.close {
+    color: #ff0000;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+/* Input Containers */
+.input-container {
+    margin: 10px 0;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-container input[type="text"],
+.input-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-container input[type="submit"] {
+    width: 100%;
+    background-color: #f4b400;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.input-container input[type="submit"]:hover {
+    background-color: #e7a700;
+}
+
+/* Alert Message */
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Animation for Modal */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .modal-content {
+        width: 95%;
+    }
+}
+/* Tabs Container */
+.modal-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+/* Tab Buttons */
+.tab-button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: #f1f1f1;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab-button.active {
+    background: #FF2D00;
+    color: white;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+}
+
+.dropdown{
+    border-radius: 5px !important;
+}
+
+/* .dropdown .dropdown-content a{
+color: #00ff00;
+background: black;
+} */
+
+.btn-keranjang {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px; /* Mengurangi ukuran padding agar button lebih kecil */
+    background-color: #00ff00;
+    color: #030303;
+    font-size: 14px; /* Ukuran font lebih kecil agar button tidak terlalu besar */
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-keranjang:hover {
+    background-color: #00ff00;
+}

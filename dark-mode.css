@@ -1,0 +1,16 @@
+/* dark-mode.css */
+body.dark-mode {
+    background: #121212;
+    color: #ffffff;
+}
+
+.navbar.dark-mode {
+    background-color: #202020;
+}
+
+.profile-info.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Add other dark mode styles as needed */

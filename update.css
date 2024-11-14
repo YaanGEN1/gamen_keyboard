@@ -1,0 +1,274 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding-top: 100px; /* Sesuaikan dengan tinggi navbar */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: rgba(44, 42, 42, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #ffae00;
+    backdrop-filter: blur(10px);
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav ul li:hover {
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: #ffd500;
+}
+
+/* Profil Page Specific Styles */
+.profile-info {
+    margin: 20px 0;
+}
+
+.password-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#passwordField {
+    width: calc(100% - 90px); /* Kurangi lebar tombol lihat dari input */
+    padding: 10px;
+    background-color: #2c2c2c;
+    border: none;
+    color: #e0e0e0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#toggleButton {
+    padding: 10px 15px;
+    background-color: #ffa200;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    flex-shrink: 0;
+}
+
+#toggleButton:hover {
+    background-color: #ff6600;
+}
+
+.update-message {
+    color: green; /* Berikan warna hijau untuk pesan sukses */
+    margin-bottom: 10px;
+}
+
+/* Tombol Umum */
+button {
+    background-color: #ffa200;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px; /* Tambahkan margin bawah untuk spasi antar tombol */
+}
+
+button:hover {
+    background-color: #ff6600;
+}
+
+/* Tombol Khusus */
+.btn-update {
+    background-color: #ffae00;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-update:hover {
+    background-color: #ff6600;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6A0DAD;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px; /* Tambahkan margin atas untuk spasi */
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #3700b3;
+}
+
+/* Profil Container */
+.profil-container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 20px; /* Sesuaikan jarak dengan tinggi navbar */
+}
+
+.profil-container h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.profil-container .profile-info {
+    text-align: left; /* Agar lebih rapi */
+    margin-bottom: 20px;
+}
+
+/* Popup Window Styles */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.popup-overlay.show {
+    display: flex;
+    opacity: 1;
+}
+
+.popup-content {
+    background: #2d2d2d;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.popup-overlay.show .popup-content {
+    transform: scale(1);
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.btn-confirm, .btn-cancel {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-confirm {
+    background: #0084ff;
+    color: #fff;
+}
+
+.btn-cancel {
+    background: #2f00ff;
+    color: #fff;
+}
+
+/* Switch (Dark Mode) Styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.round {
+    border-radius: 34px;
+}

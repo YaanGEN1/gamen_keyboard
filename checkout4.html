@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pemesanan</title>
+	<link rel="stylesheet" type="text/css" href="checkout.css">
+</head>
+<body>
+	<header>
+		<h1>Samsung 850 EVO 500GB</h1>
+	</header>
+	<main>
+		<form method="post" class="form" action="order.html" target="_blank">
+			<fieldset>
+				<legend>isi data berikut untuk pemesanan barang</legend><br>
+				<label for="name">Nama:</label>
+				<input type="text" id="name" name="name" required><br>
+				<label for="address">Alamat:</label>
+				<textarea id="address" name="address" rows="4" cols="50" required></textarea><br>
+				<label for="name">Kode POS:</label>
+				<input type="text" id="name" name="name" required><br>
+			</fieldset>
+			<fieldset>
+				<legend>Metode Pembayaran</legend><br>
+				<label for="card-number">Masukkan Nomor OVO/DANA/GOPAY Anda:</label>
+				<input type="text" id="card-number" name="card-number" required><br>
+			</fieldset>
+			<input type="submit" value="Pesan">
+		</form>
+	</main>
+</body>
+</html>

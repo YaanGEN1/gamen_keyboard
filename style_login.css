@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Warna latar belakang gelap */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff; /* Warna teks putih */
+}
+
+.container{
+    
+}
+.card {
+    /* max-width: 500px; */
+    background-color: #333; /* Warna latar belakang kontainer */
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* Bayangan dengan warna putih */
+    text-align: center;
+}
+
+h2 {
+    color: #fff; /* Warna teks putih */
+}
+
+.input-container {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff; /* Warna teks putih */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] { /* Menambahkan gaya untuk input email */
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #666; /* Warna border yang lebih gelap */
+    border-radius: 3px;
+    background-color: #444; /* Warna latar belakang input yang lebih gelap */
+    color: #fff; /* Warna teks putih */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff; /* Warna teks putih */
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.alert {
+    background: #f34d37;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ff0000;
+}
+
+label{
+    text-align: left;
+}
